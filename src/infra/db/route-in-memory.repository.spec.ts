@@ -6,8 +6,8 @@ describe("RouteInMemoryRepository Test", () => {
     const repository = new RouteInMemoryRepository();
     const routeProps: RouteProps = {
       title: "minha rota",
-      startPosition: { lat: 0, lng: 1 },
-      endPosition: { lat: 2, lng: 3 },
+      startPosition: { lat: 3, lng: 6 },
+      endPosition: { lat: 6, lng: 7 },
     };
     const route = new Route(routeProps);
     await repository.insert(route);

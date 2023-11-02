@@ -8,8 +8,8 @@ describe('CreateRouteUseCase Tests', () => {
         const createUseCase = new CreateRouteUseCase(repository);
         const output = await createUseCase.execute({
             title: 'my title',
-            startPosition: {lat: 1, lng: 2},
-            endPosition: {lat: 3, lng: 4},
+            startPosition: {lat: 4, lng: 6},
+            endPosition: {lat: 8, lng: 9},
         });
         expect(repository.items).toHaveLength(1);
         expect(output).toStrictEqual({
